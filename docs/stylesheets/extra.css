@@ -1,0 +1,240 @@
+/* Team Titans — identidade visual corporativa de engenharia */
+
+:root {
+  --tt-navy: #0b1f33;
+  --tt-steel: #1a3a52;
+  --tt-blue: #2f6fed;
+  --tt-blue-deep: #1e4fb8;
+  --tt-slate: #5a6b7d;
+  --tt-surface: #f4f6f8;
+  --tt-border: #d5dde5;
+  --tt-accent: #0d9488;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--tt-navy);
+  --md-primary-fg-color--light: var(--tt-steel);
+  --md-primary-fg-color--dark: #061422;
+  --md-accent-fg-color: var(--tt-accent);
+  --md-default-bg-color: #f8fafb;
+  --md-typeset-a-color: var(--tt-blue-deep);
+  --md-code-bg-color: #eef2f6;
+  --md-footer-bg-color: var(--tt-navy);
+  --md-footer-bg-color--dark: #061422;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0e2438;
+  --md-primary-fg-color--light: #1a3a52;
+  --md-primary-fg-color--dark: #071521;
+  --md-accent-fg-color: #2dd4bf;
+  --md-default-bg-color: #0c1620;
+  --md-typeset-a-color: #7eb6ff;
+  --md-code-bg-color: #152433;
+  --md-footer-bg-color: #071521;
+  --md-footer-bg-color--dark: #040b12;
+}
+
+/* Header institucional */
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.md-header__title {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.md-tabs {
+  background-color: var(--tt-steel);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #102538;
+}
+
+.md-tabs__link {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+}
+
+/* Tipografia técnica */
+.md-typeset h1 {
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--tt-navy);
+  border-bottom: 2px solid var(--tt-border);
+  padding-bottom: 0.4em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #e8eef4;
+  border-bottom-color: #243647;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  margin-top: 1.8em;
+  color: var(--tt-steel);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #c5d4e3;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  color: var(--tt-slate);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: #9eb0c2;
+}
+
+.md-typeset code {
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+.md-typeset pre > code {
+  border-radius: 4px;
+  border: 1px solid var(--tt-border);
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre > code {
+  border-color: #243647;
+}
+
+/* Cards de área na home */
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.area-card {
+  display: block;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--tt-border);
+  border-left: 3px solid var(--tt-blue);
+  background: #fff;
+  border-radius: 2px;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+[data-md-color-scheme="slate"] .area-card {
+  background: #122030;
+  border-color: #243647;
+  border-left-color: #5b9cff;
+}
+
+.area-card:hover {
+  border-color: var(--tt-blue);
+  box-shadow: 0 4px 14px rgba(11, 31, 51, 0.08);
+}
+
+.area-card__label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tt-blue);
+  margin-bottom: 0.35rem;
+}
+
+[data-md-color-scheme="slate"] .area-card__label {
+  color: #7eb6ff;
+}
+
+.area-card__title {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--tt-navy);
+  margin-bottom: 0.4rem;
+}
+
+[data-md-color-scheme="slate"] .area-card__title {
+  color: #e8eef4;
+}
+
+.area-card__desc {
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--tt-slate);
+  margin: 0;
+}
+
+[data-md-color-scheme="slate"] .area-card__desc {
+  color: #9eb0c2;
+}
+
+/* Hero institucional */
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0.75rem 0 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--tt-border);
+  border-bottom: 1px solid var(--tt-border);
+  font-size: 0.78rem;
+  color: var(--tt-slate);
+  letter-spacing: 0.02em;
+}
+
+[data-md-color-scheme="slate"] .hero-meta {
+  border-color: #243647;
+  color: #9eb0c2;
+}
+
+.hero-meta strong {
+  color: var(--tt-navy);
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .hero-meta strong {
+  color: #e8eef4;
+}
+
+/* Footer: texto centralizado, GitHub na extrema direita */
+.md-footer-meta {
+  background-color: inherit;
+}
+
+.md-footer-meta__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+}
+
+.md-copyright {
+  width: auto;
+  max-width: calc(100% - 4rem);
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.md-social {
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}

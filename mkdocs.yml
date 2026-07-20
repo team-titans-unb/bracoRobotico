@@ -1,2 +1,96 @@
 site_name: Braço Robótico
+site_description: Documentação técnica do projeto de braço robótico — Team Titans UnB
 site_url: https://team-titans-unb.github.io/bracoRobotico/
+site_author: Team Titans UnB
+
+repo_url: https://github.com/team-titans-unb/bracoRobotico
+repo_name: team-titans-unb/bracoRobotico
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: pt
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/robot-industrial
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: pt
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Início: index.md
+  - Software:
+    - software/index.md
+    - Visão geral: software/visao-geral.md
+  - Controle:
+    - controle/index.md
+    - Visão geral: controle/visao-geral.md
+  - Mecânica:
+    - mecanica/index.md
+    - Visão geral: mecanica/visao-geral.md
+  - Eletrônica:
+    - eletronica/index.md
+    - Visão geral: eletronica/visao-geral.md
+  - Guia Markdown: guia-markdown.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/team-titans-unb/bracoRobotico
+  generator: false
