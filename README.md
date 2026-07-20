@@ -110,22 +110,13 @@ bracoRobotico/
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/Raul-10">
-        <img style="border-radius: 50%;" src="https://github.com/Raul-10.png" width="120px;" alt="Raul-10"/>
-        <br />
-        <sub><b>Raul</b></sub>
-      </a>
-      <br />
-      <sub>Integrante</sub>
-    </td>
-    <td align="center">
       <a href="https://github.com/FelipeFreire-gf">
         <img style="border-radius: 50%;" src="https://github.com/FelipeFreire-gf.png" width="120px;" alt="Felipe das Neves"/>
         <br />
         <sub><b>Felipe das Neves</b></sub>
       </a>
       <br />
-      <sub>Integrante</sub>
+      <sub>Software</sub>
     </td>
     <td align="center">
       <a href="https://github.com/prietum">
@@ -134,7 +125,16 @@ bracoRobotico/
         <sub><b>Pietro Ritchele</b></sub>
       </a>
       <br />
-      <sub>Integrante</sub>
+      <sub>Controle</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Raul-10">
+        <img style="border-radius: 50%;" src="https://github.com/Raul-10.png" width="120px;" alt="Raul-10"/>
+        <br />
+        <sub><b>Raul</b></sub>
+      </a>
+      <br />
+      <sub>Mecânica</sub>
     </td>
   </tr>
   <tr>
@@ -145,7 +145,7 @@ bracoRobotico/
         <sub><b>João Gabryel</b></sub>
       </a>
       <br />
-      <sub>Integrante</sub>
+      <sub>Eletrônica</sub>
     </td>
     <td align="center">
       <a href="https://github.com/joaocanabarro-hub">
@@ -154,7 +154,7 @@ bracoRobotico/
         <sub><b>João Canabarro</b></sub>
       </a>
       <br />
-      <sub>Integrante</sub>
+      <sub>Eletrônica</sub>
     </td>
   </tr>
 </table>
@@ -184,6 +184,6 @@ Este projeto é desenvolvido pelo time **Robotics Titans** no contexto da **Univ
 
 <div align="center">
 
-<sub>Robotics Titans - Documentação técnica do Braço Robótico</sub>
+<sub>Robotics Titans UnB — Documentação do Braço Robótico</sub>
 
 </div>

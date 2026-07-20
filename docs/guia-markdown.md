@@ -71,12 +71,12 @@ No site, isso renderiza como hierarquia de seções. Use **um único** `#` por p
 
 ```markdown
 [Documentação MkDocs](https://www.mkdocs.org)
-[Visão geral de Software](software/visao-geral.md)
+[Diagramas de Software](software/diagramas.md)
 
 ![Texto alternativo](caminho/da/imagem.png)
 ```
 
-[Documentação MkDocs](https://www.mkdocs.org) · [Visão geral de Software](software/visao-geral.md)
+[Documentação MkDocs](https://www.mkdocs.org) · [Diagramas de Software](software/diagramas.md)
 
 ## Código
 

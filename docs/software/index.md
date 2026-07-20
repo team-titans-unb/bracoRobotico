@@ -1,28 +1,49 @@
 # Software
 
-Área responsável pela arquitetura de software, firmwares embarcados, interfaces de operação e integração com as demais disciplinas do braço robótico.
+**Responsável:** Felipe das Neves
 
-## Escopo
+Área responsável por repositórios, diagramas de software e pela unificação das análises de controle em código.
 
-- Estrutura de repositórios e organização de código
-- Firmware e aplicações de supervisão
-- Interfaces homem-máquina (HMI) e APIs
-- Build, testes e versionamento
-- Logs, telemetria e diagnóstico
+## Atribuições
+
+- Criar e manter organizados os repositórios utilizados no projeto conceitual
+- Unificar as análises de controle e prontificá-las em código
+- Modelar os diagramas de **Estados**, **Arquitetura** e **Sequência**
+
+## Entregáveis esperados
+
+| Entregável | Descrição | Status |
+| ---------- | --------- | ------ |
+| Diagrama de máquina de estados | Comportamento e modos de operação | Em definição |
+| Diagrama de arquitetura | Organização dos módulos e interfaces | Em definição |
+| Diagrama de sequência | Fluxos principais de interação | Em definição |
+| Códigos principais | Implementação enxuta no escopo do texto | Em definição |
 
 ## Documentos desta área
 
 | Documento | Descrição |
 | --------- | --------- |
-| [Visão geral](visao-geral.md) | Objetivos, stack e fronteiras da área |
+| [Diagramas](diagramas.md) | Estados, arquitetura e sequência |
+| [Código](codigo.md) | Organização, I/O e implementação |
+
+## Observações de escopo
+
+!!! note "Códigos no texto vs. fora do texto"
+    - **Dentro do escopo do texto:** somente os códigos principais, de forma enxuta
+    - **Fora do escopo do texto:** códigos em completude, bibliotecas e definições
+    - **Inputs e outputs** precisam ficar bem definidos no código
 
 ## Integrações
 
 | Interface | Área parceira | Conteúdo típico |
 | --------- | ------------- | --------------- |
-| Comandos de movimento | Controle | Setpoints, modos e estados |
-| Feedback de sensores | Eletrônica | Leituras brutas e calibradas |
-| Limites físicos | Mecânica | Envelopes e restrições de junta |
+| Funções de controle | Controle | Modelagem da malha → código |
+| I/O e drivers | Eletrônica | MCU, PCA9685 e sensores |
+| Limites físicos | Mecânica | Envelope e restrições do braço |
 
-!!! note "Padrão de registro"
-    Documente decisões de software com motivação técnica, alternativas consideradas e impacto nas demais áreas.
+## Ferramentas
+
+| Ferramenta | Uso |
+| ---------- | --- |
+| GitHub | Versionamento e organização dos repositórios |
+| Overleaf | Textos finais em LaTeX da praça |

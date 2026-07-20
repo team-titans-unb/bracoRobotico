@@ -13,7 +13,11 @@
          <lastmod>2026-07-20</lastmod>
     </url>
     <url>
-         <loc>https://team-titans-unb.github.io/bracoRobotico/controle/visao-geral/</loc>
+         <loc>https://team-titans-unb.github.io/bracoRobotico/controle/design-de-controle/</loc>
+         <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
+         <loc>https://team-titans-unb.github.io/bracoRobotico/controle/referencial-teorico/</loc>
          <lastmod>2026-07-20</lastmod>
     </url>
     <url>
@@ -21,7 +25,7 @@
          <lastmod>2026-07-20</lastmod>
     </url>
     <url>
-         <loc>https://team-titans-unb.github.io/bracoRobotico/eletronica/visao-geral/</loc>
+         <loc>https://team-titans-unb.github.io/bracoRobotico/eletronica/diagramas/</loc>
          <lastmod>2026-07-20</lastmod>
     </url>
     <url>
@@ -29,7 +33,11 @@
          <lastmod>2026-07-20</lastmod>
     </url>
     <url>
-         <loc>https://team-titans-unb.github.io/bracoRobotico/mecanica/visao-geral/</loc>
+         <loc>https://team-titans-unb.github.io/bracoRobotico/mecanica/design-mecanico/</loc>
+         <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
+         <loc>https://team-titans-unb.github.io/bracoRobotico/mecanica/referencial-teorico/</loc>
          <lastmod>2026-07-20</lastmod>
     </url>
     <url>
@@ -37,7 +45,11 @@
          <lastmod>2026-07-20</lastmod>
     </url>
     <url>
-         <loc>https://team-titans-unb.github.io/bracoRobotico/software/visao-geral/</loc>
+         <loc>https://team-titans-unb.github.io/bracoRobotico/software/codigo/</loc>
+         <lastmod>2026-07-20</lastmod>
+    </url>
+    <url>
+         <loc>https://team-titans-unb.github.io/bracoRobotico/software/diagramas/</loc>
          <lastmod>2026-07-20</lastmod>
     </url>
 </urlset>

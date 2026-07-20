@@ -1,13 +1,5 @@
 # Braço Robótico
 
-Documentação técnica oficial do projeto de braço robótico desenvolvido pelo **Team Titans** (UnB).
-
-<div class="hero-meta" markdown="0">
-  <span><strong>Instituição</strong> · Universidade de Brasília</span>
-  <span><strong>Equipe</strong> · Team Titans</span>
-  <span><strong>Escopo</strong> · Software · Controle · Mecânica · Eletrônica</span>
-</div>
-
 Este portal concentra especificações, decisões de projeto, procedimentos e registros de desenvolvimento das quatro áreas técnicas do sistema.
 
 ## Áreas de desenvolvimento
@@ -34,22 +26,6 @@ Este portal concentra especificações, decisões de projeto, procedimentos e re
     <span class="area-card__desc">Hardware, sensores, drivers, alimentação e integração elétrica.</span>
   </a>
 </div>
-
-## Como usar esta documentação
-
-1. Navegue pelas abas superiores para acessar cada área técnica.
-2. Cada área possui uma página índice e páginas de detalhamento.
-3. Consulte o [Guia Markdown](guia-markdown.md) para o padrão de escrita das páginas.
-4. Prefira atualizar a documentação junto com mudanças de projeto relevantes.
-
-## Status do projeto
-
-| Área        | Status        | Responsabilidade principal      |
-| ----------- | ------------- | ------------------------------- |
-| Software    | Em definição  | Código, interfaces e integração |
-| Controle    | Em definição  | Algoritmos e validação          |
-| Mecânica    | Em definição  | Estrutura e montagem            |
-| Eletrônica  | Em definição  | Circuitos e sensores             |
 
 !!! tip "Contribuição"
     Mantenha títulos objetivos, registre decisões com contexto e evite duplicar conteúdo entre áreas. Quando um tópico for interdisciplinar, referencie a área dona do conteúdo.

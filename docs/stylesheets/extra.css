@@ -48,10 +48,18 @@
 
 /* Sidebar lateral */
 .md-nav--primary .md-nav__title {
-  background-color: var(--tt-navy);
-  color: #fff;
+  background-color: #e8eef4;
+  color: var(--tt-navy);
   font-weight: 600;
   letter-spacing: 0.01em;
+  border-bottom: 1px solid var(--tt-border);
+  box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__title {
+  background-color: #152433;
+  color: #e8eef4;
+  border-bottom-color: #243647;
 }
 
 .md-nav--primary .md-nav__item--active > .md-nav__link {

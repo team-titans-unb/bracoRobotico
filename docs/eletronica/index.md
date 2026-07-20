@@ -1,28 +1,55 @@
 # Eletrônica
 
-Área responsável pelo hardware elétrico e eletrônico: alimentação, drivers, sensores, proteção e integração com o restante do sistema.
+**Responsáveis:** João Canabarro e João Gabryel
 
-## Escopo
+Área responsável pelos esquemáticos eletrônicos, seleção de componentes e integração elétrica do braço.
 
-- Diagrama elétrico e esquemáticos
-- Seleção de microcontroladores, drivers e sensores
-- Fonte, distribuição de potência e proteções
-- PCB / protoboard e cabeamento
-- Ensaios elétricos e de integridade de sinal
+## Atribuições
+
+- Modelar os **esquemáticos eletrônicos**
+- Definir e documentar os **componentes** que serão utilizados
+
+## Entregáveis esperados
+
+| Entregável | Descrição | Status |
+| ---------- | --------- | ------ |
+| Diagrama eletrônico completo | Modelado no **Altium** | Em definição |
+| Lista de componentes | MCU, drivers, sensores e periféricos | Em definição |
+| Interfaces elétricas | Pinagem, barramentos e alimentação | Em definição |
+
+## Componentes de referência (alinhamento inicial)
+
+| Componente | Função | Observação |
+| ---------- | ------ | ---------- |
+| Raspberry Pi 3 | MCU / computador de bordo principal | Definido no alinhamento |
+| PCA9685PW | Driver PWM via I²C | Definido no alinhamento |
 
 ## Documentos desta área
 
 | Documento | Descrição |
 | --------- | --------- |
-| [Visão geral](visao-geral.md) | Arquitetura elétrica e interfaces |
+| [Diagramas](diagramas.md) | Esquemáticos Altium, blocos e pinagem |
+
+## Observações de escopo
+
+!!! danger "Segurança elétrica"
+    Antes de ensaios, documente tensões, correntes máximas e o procedimento de energização.
+
+!!! note "Integração com Software e Controle"
+    Inputs/outputs e interfaces com a MCU devem ficar explícitos para facilitar a implementação em código.
 
 ## Integrações
 
 | Interface | Área parceira | Conteúdo típico |
 | --------- | ------------- | --------------- |
-| Barramentos e I/O | Software | Protocolos e pinagem |
-| Realimentação | Controle | Encoders, corrente, tensão |
-| Espaço e fixação | Mecânica | Volumes e conectores |
+| Barramentos e I/O | Software | I²C (PCA9685), pinagem e drivers |
+| Realimentação | Controle | Sinais para a malha PID |
+| Fixação e clearance | Mecânica | Espaço físico de placas e conectores |
 
-!!! danger "Segurança elétrica"
-    Documente tensões, correntes máximas e procedimentos de energização antes de qualquer ensaio com motores.
+## Ferramentas
+
+| Ferramenta | Uso |
+| ---------- | --- |
+| Altium | Diagrama eletrônico completo |
+| GitHub | Versionamento de artefatos |
+| Overleaf | Textos finais em LaTeX da praça |

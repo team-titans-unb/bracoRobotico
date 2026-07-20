@@ -1,7 +1,7 @@
 site_name: Braço Robótico
-site_description: Documentação técnica do projeto de braço robótico — Team Titans UnB
+site_description: Documentação do projeto de braço robótico — Robotics Titans UnB
 site_url: https://team-titans-unb.github.io/bracoRobotico/
-site_author: Team Titans UnB
+site_author: Robotics Titans UnB
 
 repo_url: https://github.com/team-titans-unb/bracoRobotico
 repo_name: team-titans-unb/bracoRobotico
@@ -28,8 +28,6 @@ theme:
     text: IBM Plex Sans
     code: IBM Plex Mono
   features:
-    - navigation.sections
-    - navigation.expand
     - navigation.top
     - navigation.indexes
     - search.suggest
@@ -76,16 +74,19 @@ nav:
   - Início: index.md
   - Software:
     - software/index.md
-    - Visão geral: software/visao-geral.md
+    - Diagramas: software/diagramas.md
+    - Código: software/codigo.md
   - Controle:
     - controle/index.md
-    - Visão geral: controle/visao-geral.md
+    - Referencial teórico: controle/referencial-teorico.md
+    - Design de controle: controle/design-de-controle.md
   - Mecânica:
     - mecanica/index.md
-    - Visão geral: mecanica/visao-geral.md
+    - Referencial teórico: mecanica/referencial-teorico.md
+    - Design mecânico: mecanica/design-mecanico.md
   - Eletrônica:
     - eletronica/index.md
-    - Visão geral: eletronica/visao-geral.md
+    - Diagramas: eletronica/diagramas.md
   - Guia Markdown: guia-markdown.md
 
 extra:
