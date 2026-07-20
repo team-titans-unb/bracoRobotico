@@ -87,6 +87,7 @@ nav:
   - Eletrônica:
     - eletronica/index.md
     - Diagramas: eletronica/diagramas.md
+  - LaTeX: https://www.overleaf.com/read/rxtphtystjrf#38d2da
   - Guia Markdown: guia-markdown.md
 
 extra:
