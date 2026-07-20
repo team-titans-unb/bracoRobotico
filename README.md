@@ -32,17 +32,6 @@ O projeto visa estruturar, de forma rastreável e colaborativa, o desenvolviment
 - **Rastreabilidade**: Registrar requisitos, status e entregáveis de cada disciplina
 - **Padronização**: Manter um padrão editorial corporativo para engenharia (Markdown, tabelas, status e versionamento)
 
-### Áreas de Desenvolvimento
-
-| Área | Escopo |
-|------|--------|
-| **Software** | Arquitetura, firmware, interfaces, build, testes e integração |
-| **Controle** | Cinemática, malhas de controle, calibração e validação de movimento |
-| **Mecânica** | CAD, materiais, montagem estrutural e restrições mecânicas |
-| **Eletrônica** | Hardware, sensores, drivers, alimentação e proteção elétrica |
-
-Para mais detalhes, veja a documentação publicada.
-
 ## Documentação
 
 **Site de Documentação**: [https://team-titans-unb.github.io/bracoRobotico/](https://team-titans-unb.github.io/bracoRobotico/)
