@@ -1,9 +1,12 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-//#include <pid/pid.h>
+#include "pid.h"
 
 int main(){
+	//criar um controlador
+	PID control = PID(0.0, 1.0, 1.0, 1.0);
+
 	//abrir arquivo de plotagem
 	std::ofstream plotdata("pidplot.dat");
 

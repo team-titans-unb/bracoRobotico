@@ -7,4 +7,4 @@ __pycache__/
 venv/
 
 pid_tests/pidplot.dat
-pid_tests/build
+pid_tests/build/
