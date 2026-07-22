@@ -1,16 +1,24 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 //#include <pid/pid.h>
-#include <matplot/matplot.h>
 
 int main(){
-	//PID stnz = PID(0.0, 1.0, 1.0, 1.0)
+	//abrir arquivo de plotagem
+	std::ofstream plotdata("pidplot.dat");
 
-	using namespace matplot;
-	std::vector<double> x = linspace(0,10);
-	std::vector<double> y = transform(x, [](auto x){return x>3;});
-	//std::vector<double> z = transform(y, [](auto y){})
+	//verifica se deu certo
+	if (!plotdata.is_open()){
+		std::cerr << "Erro ao abrir 'pidplot.dat'." << std::endl;
+	}
 
-	plot(x,y,"k");
+	//escrever dados
+	for (double x = 0; x<10; x++){
+		double y = x*2;
+		plotdata << std::to_string(x) + " " + std::to_string(y) << std::endl;
+	}
+
+	plotdata.close();
 
 	return 0;
 }

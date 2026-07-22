@@ -8,5 +8,4 @@ target_sources(Test
 target_link_libraries(Test
 	PRIVATE
 		PID
-		matplot
 )

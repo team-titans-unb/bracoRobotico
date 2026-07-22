@@ -5,3 +5,6 @@ __pycache__/
 .DS_Store
 .venv/
 venv/
+
+pid_tests/pidplot.dat
+pid_tests/build
