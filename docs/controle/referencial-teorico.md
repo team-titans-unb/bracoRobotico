@@ -1,7 +1,3 @@
-# Referencial teórico
-
-Referencial teórico necessário ao funcionamento ideal do braço, com foco na modelagem da malha PID.
-
 ## Escopo do alinhamento
 
 - Bases matemáticas para a malha de controle PID
@@ -9,7 +5,7 @@ Referencial teórico necessário ao funcionamento ideal do braço, com foco na m
 - Parâmetros e grandezas envolvidas no modelo
 - Referências utilizadas
 
-## Referencial teórico
+# Referencial teórico
 
 O controlador PID serve para dirigir sinais ao braço de forma a compensar erros externos, como por exemplo o atrito das juntas. Ele compensa o erro do sistema utilizando três termos: proporcional, integral e diferencial. Considerando o erro em função do tempo $$e(t)$$, a função de PID pode ser definida como: 
 
