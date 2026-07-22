@@ -10,4 +10,4 @@ O controlador existe como uma função que admite um valor imediatamente desejad
 
 Por isso, faz sentido implementar como um objeto 'PID'. PID:get(valor) retornaria o valor corrigido, e o objeto teria membros correspondentes ao erro acumulado e tempo atual.
 
-![gráfico](graph.png)
+![gráfico](graph.PNG)
