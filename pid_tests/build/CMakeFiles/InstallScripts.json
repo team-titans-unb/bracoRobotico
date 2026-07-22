@@ -1,9 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/Users/0000/bracoRobotico/pid_tests/build/cmake_install.cmake",
-		"C:/Users/0000/bracoRobotico/pid_tests/build/pid/cmake_install.cmake",
-		"C:/Users/0000/bracoRobotico/pid_tests/build/test/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
