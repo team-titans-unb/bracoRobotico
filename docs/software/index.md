@@ -17,14 +17,14 @@
 | Diagrama de máquina de estados | Comportamento e modos de operação | Em definição |
 | Diagrama de arquitetura | Organização dos módulos e interfaces | Em definição |
 | Diagrama de sequência | Fluxos principais de interação | Em definição |
-| Códigos principais | Implementação enxuta no escopo do texto | Em definição |
+| Códigos principais | Python orquestra UI; C controla periféricos | Modelado |
 
 ## Documentos desta área
 
 | Documento | Descrição |
 | --------- | --------- |
 | [Diagramas](diagramas.md) | Estados, arquitetura e sequência |
-| [Código](codigo.md) | Organização, I/O e implementação |
+| [Código](codigo.md) | Python (UI) + C (periféricos), IPC JSON |
 
 ## Observações de escopo
 
