@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libPID.a CMakeFiles/PID.dir/pid.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libPID.a
