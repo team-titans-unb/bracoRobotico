@@ -250,3 +250,44 @@
   transform: translateY(-50%);
   margin: 0;
 }
+
+/* Imagens e galeria do Robô Bio */
+.md-typeset img {
+  border-radius: 4px;
+}
+
+.md-typeset .figura-destaque {
+  display: block;
+  max-height: 32rem;
+  margin: 0 auto 1.5rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.md-typeset .galeria figure {
+  margin: 0;
+  max-width: none;
+}
+
+.md-typeset .galeria img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1px solid var(--tt-border);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .galeria img {
+  border-color: #243647;
+}
+
+.md-typeset .galeria figcaption {
+  font-size: 0.75rem;
+  color: var(--tt-slate);
+  margin-top: 0.4rem;
+  max-width: none;
+}

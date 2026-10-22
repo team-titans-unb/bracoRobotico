@@ -1,55 +1,49 @@
 # Eletrônica
 
-**Responsáveis:** João Canabarro e João Gabryel
+Componentes e integração elétrica do Robô Bio V2.
 
-Área responsável pelos esquemáticos eletrônicos, seleção de componentes e integração elétrica do braço.
+## Componentes
 
-## Atribuições
-
-- Modelar os **esquemáticos eletrônicos**
-- Definir e documentar os **componentes** que serão utilizados
-
-## Entregáveis esperados
-
-| Entregável | Descrição | Status |
+| Componente | Interface | Função |
 | ---------- | --------- | ------ |
-| Diagrama eletrônico completo | Modelado no **Altium** | Em definição |
-| Lista de componentes | MCU, drivers, sensores e periféricos | Em definição |
-| Interfaces elétricas | Pinagem, barramentos e alimentação | Em definição |
+| Raspberry Pi 3 | — | Computador de bordo: lógica de alto nível, comunicação e futuros módulos de visão |
+| Estardyn PCA9685PW | I²C | Driver PWM de 16 canais e 12 bits — comanda os 12 servos de forma independente |
+| Servo MG996R (×6) | PWM | Articuladores do rover (180°) |
+| Servo MG996R adaptado (×6) | PWM | Locomoção (rotação contínua) |
+| Placa solar (×4) | — | Recarga da bateria |
 
-## Componentes de referência (alinhamento inicial)
+## Acionamento dos servos
 
-| Componente | Função | Observação |
-| ---------- | ------ | ---------- |
-| Raspberry Pi 3 | MCU / computador de bordo principal | Definido no alinhamento |
-| PCA9685PW | Driver PWM via I²C | Definido no alinhamento |
+A Raspberry Pi 3 se comunica com o **PCA9685PW** via I²C; o driver gera os sinais PWM de cada canal. Dos 16 canais disponíveis, 12 são usados pelos servos:
 
-## Documentos desta área
+```mermaid
+flowchart LR
+  RPI["Raspberry Pi 3"] -- I²C --> PCA["PCA9685PW<br/>PWM 16 canais / 12 bits"]
+  PCA -- PWM --> ART["6 × MG996R<br/>articulação (180°)"]
+  PCA -- PWM --> LOC["6 × MG996R<br/>locomoção (contínuo)"]
+  SOL["4 placas solares"] --> BAT["Bateria"]
+  BAT --> RPI
+  BAT --> PCA
+```
 
-| Documento | Descrição |
-| --------- | --------- |
-| [Diagramas](diagramas.md) | Esquemáticos Altium, blocos e pinagem |
+Nos servos de locomoção, o potenciômetro foi removido e o chanfro da engrenagem lixado (ver [Mecânica](../mecanica/index.md#conversao-dos-servos-para-rotacao-continua)). Com isso, o sinal PWM passa a controlar **velocidade e sentido** de rotação, e não mais a posição.
 
-## Observações de escopo
+## Energia solar
+
+Como apoio ao projeto de extensão em escolas, foram integradas **quatro placas solares** ao robô, voltadas à recarga da bateria.
+
+!!! warning "Documentação pendente"
+    A documentação elétrica desse subsistema — dimensionamento, proteção e gestão de carga — será detalhada em uma atualização futura.
+
+## Registros
+
+| Item | Status | Observação |
+| ---- | ------ | ---------- |
+| Raspberry Pi 3 | Integrada | Montada no chassi |
+| PCA9685PW | Integrado | 12 de 16 canais em uso |
+| Placas solares | Integradas | 4 unidades |
+| Esquemático elétrico completo | Em definição | — |
+| Dimensionamento e proteção da bateria | Em definição | — |
 
 !!! danger "Segurança elétrica"
     Antes de ensaios, documente tensões, correntes máximas e o procedimento de energização.
-
-!!! note "Integração com Software e Controle"
-    Inputs/outputs e interfaces com a MCU devem ficar explícitos para facilitar a implementação em código.
-
-## Integrações
-
-| Interface | Área parceira | Conteúdo típico |
-| --------- | ------------- | --------------- |
-| Barramentos e I/O | Software | I²C (PCA9685), pinagem e drivers |
-| Realimentação | Controle | Sinais para a malha PID |
-| Fixação e clearance | Mecânica | Espaço físico de placas e conectores |
-
-## Ferramentas
-
-| Ferramenta | Uso |
-| ---------- | --- |
-| Altium | Diagrama eletrônico completo |
-| GitHub | Versionamento de artefatos |
-| Overleaf | Textos finais em LaTeX da praça |

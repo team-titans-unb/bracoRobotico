@@ -1,5 +1,5 @@
-site_name: Braço Robótico
-site_description: Documentação do projeto de braço robótico — Robotics Titans UnB
+site_name: Robô Bio
+site_description: Documentação do Robô Bio, seguidor de linha — Robotics Titans UnB
 site_url: https://team-titans-unb.github.io/bracoRobotico/
 site_author: Robotics Titans UnB
 
@@ -37,10 +37,14 @@ theme:
     - toc.follow
   icon:
     repo: fontawesome/brands/github
-    logo: material/robot-industrial
+    logo: material/robot
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
   - search:
@@ -56,6 +60,8 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
@@ -76,22 +82,13 @@ markdown_extensions:
 
 nav:
   - Início: index.md
-  - Software:
-    - software/index.md
-    - Diagramas: software/diagramas.md
-    - Código: software/codigo.md
-  - Controle:
-    - controle/index.md
-    - Referencial teórico: controle/referencial-teorico.md
-    - Design de controle: controle/design-de-controle.md
-  - Mecânica:
-    - mecanica/index.md
-    - Referencial teórico: mecanica/referencial-teorico.md
-    - Design mecânico: mecanica/design-mecanico.md
-  - Eletrônica:
-    - eletronica/index.md
-    - Diagramas: eletronica/diagramas.md
-  - LaTeX: https://www.overleaf.com/read/rxtphtystjrf#38d2da
+  - Projeto:
+    - Robô Bio V1: projeto/v1.md
+    - Robô Bio V2: projeto/v2.md
+  - Mecânica: mecanica/index.md
+  - Eletrônica: eletronica/index.md
+  - Software e controle: software/index.md
+  - Galeria: galeria.md
   - Guia Markdown: guia-markdown.md
 
 extra:

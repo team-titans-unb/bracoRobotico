@@ -1,49 +1,68 @@
 # Mecânica
 
-**Responsável:** Raul
+Na V2, a mecânica deixa de ser o gargalo que travou a V1 na manta emborrachada.
 
-Área responsável pela modelagem estrutural do braço no contexto do **bioV2** e das exigências da **ERC**.
+![Robô Bio V2 com a estrutura montada e a Raspberry Pi no chassi](../assets/imagens/desmontado.jpeg)
 
-## Atribuições
+## Chassi
 
-- Modelar o braço no **Fusion 360**, no ambiente comum do robô **bioV2**
-- Considerar aspectos de altura, tamanho e demais restrições do bioV2 e da ERC
-- Definir o **material** do braço
-- Produzir o **referencial teórico** que justifique o design
+O chassi é um rover de **seis rodas com suspensão articulada**, com peças impressas em **PLA** e **PETG** e adaptações para acomodar:
 
-## Entregáveis esperados
+- a Raspberry Pi 3
+- a fiação de prototipagem
+- as placas solares
+- o volume necessário para testar novas ideias sem refazer a estrutura a cada iteração
 
-| Entregável | Descrição | Status |
-| ---------- | --------- | ------ |
-| Modelo CAD do braço | Fusion 360, compatível com bioV2 | Em definição |
-| Design para ERC | Funções e restrições da competição contempladas | Em definição |
-| Definição de material | Escolha e justificativa | Em definição |
-| Referencial teórico | Fundamentação do design mecânico | Em definição |
+## Atuadores
 
-## Documentos desta área
+O robô utiliza **12 servos MG996R**, divididos em duas funções:
 
-| Documento | Descrição |
-| --------- | --------- |
-| [Referencial teórico](referencial-teorico.md) | Justificativa técnica do design |
-| [Design mecânico](design-mecanico.md) | CAD Fusion 360, material e montagem |
+| Quantidade | Modo | Função |
+| ---------- | ---- | ------ |
+| 6 | Rotação contínua (adaptado) | Locomoção — acionamento das rodas |
+| 6 | Padrão 180° | Articuladores do modelo |
 
-## Observações de escopo
+## Conversão dos servos para rotação contínua
 
-!!! note "Contexto bioV2 e ERC"
-    A modelagem deve considerar o ambiente comum do robô bioV2 (altura, tamanho e afins) e todas as funções necessárias à ERC.
+A locomoção reutiliza a experiência da primeira versão: os servos das rodas foram adaptados para girar continuamente, permitindo acoplar as rodas do rover com mais folga e repetibilidade.
 
-## Integrações
+1. Abrir o servo MG996R e retirar a engrenagem de saída
+2. **Remover o potenciômetro** de realimentação
+3. **Lixar o chanfro** (batente) da engrenagem, que limita o curso a 180°
+4. Remontar o conjunto motor-engrenagem
 
-| Interface | Área parceira | Conteúdo típico |
-| --------- | ------------- | --------------- |
-| Envelope e batentes | Controle | Limites para a malha de controle |
-| Fixação de eletrônica | Eletrônica | Espaço para Raspberry Pi, PCA9685 e cabeamento |
-| Massa / geometria | Software / Controle | Parâmetros para modelo e código |
+<div class="galeria" markdown>
 
-## Ferramentas
+<figure markdown>
+![Engrenagem do servo com o chanfro](../assets/imagens/chanfroMotor.jpeg)
+<figcaption>Engrenagem com o chanfro, antes do ajuste</figcaption>
+</figure>
 
-| Ferramenta | Uso |
-| ---------- | --- |
-| Fusion 360 | Modelagem no ambiente comum bioV2 |
-| GitHub | Versionamento de artefatos e revisões |
-| Overleaf | Textos finais em LaTeX da praça |
+<figure markdown>
+![Engrenagem após a remoção do chanfro](../assets/imagens/chanfroRemovidoMotor.jpeg)
+<figcaption>Engrenagem após a remoção do chanfro</figcaption>
+</figure>
+
+<figure markdown>
+![Engrenagem acoplada ao motor](../assets/imagens/engrenagemMotor.jpeg)
+<figcaption>Engrenagem acoplada ao motor</figcaption>
+</figure>
+
+<figure markdown>
+![Remontagem do conjunto motor-engrenagem](../assets/imagens/remontagemMotor.jpeg)
+<figcaption>Remontagem do conjunto motor-engrenagem</figcaption>
+</figure>
+
+</div>
+
+## Registros
+
+| Artefato | Status | Observação |
+| -------- | ------ | ---------- |
+| Chassi V2 | Montado | Impresso em PLA e PETG |
+| Servos de locomoção | Adaptados | 6 × MG996R em rotação contínua |
+| Servos de articulação | Montados | 6 × MG996R a 180° |
+| Suporte das placas solares | Montado | 4 placas |
+
+!!! note "Controle de versão de CAD"
+    Registre a revisão do modelo (ex.: `R01`, `R02`) a cada mudança dimensional relevante.
