@@ -3,15 +3,14 @@
 <div class="hero-meta" markdown="0">
   <span><strong>Time:</strong> Robotics Titans UnB</span>
   <span><strong>Origem:</strong> FSE — FCTE/UnB</span>
-  <span><strong>Orientação:</strong> Prof. Dr. Renato Coral</span>
   <span><strong>Versão atual:</strong> V2 (em desenvolvimento)</span>
 </div>
 
 ![Robô Bio V2 montado, com placas solares e servos MG996R](assets/imagens/capa.jpeg){ .figura-destaque }
 
-O **Robô Bio** é um seguidor de linha autônomo desenvolvido inicialmente como trabalho final da disciplina **Fundamentos de Sistemas Embarcados (FSE)**, da Faculdade de Ciências e Tecnologias em Engenharia (**FCTE/UnB**), sob orientação do professor **Dr. Renato Coral**.
+O **Robô Bio** é um seguidor de linha autônomo desenvolvido inicialmente como trabalho final da disciplina **Fundamentos de Sistemas Embarcados (FSE)**, da Faculdade de Ciências e Tecnologias em Engenharia (**FCTE/UnB**).
 
-O projeto partiu da **V1** — PID clássico, sensores de refletância e telemetria via ThingsBoard —, passou por um novo chassi na **V2** e segue em direção a um robô mais robusto: calibração de PID por **algoritmos bioinspirados** e delimitação do trajeto por **visão computacional**.
+O projeto partiu da **V1** PID clássico, sensores de refletância e telemetria via ThingsBoard, passou por um novo chassi na **V2** e segue em direção a um robô mais robusto: calibração de PID por **algoritmos bioinspirados** e delimitação do trajeto por **visão computacional**.
 
 ## Linha do tempo
 
